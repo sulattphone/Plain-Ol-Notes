@@ -43,11 +43,47 @@
                     <navigationItem key="navigationItem" id="jc8-zs-DZB"/>
                     <connections>
                         <outlet property="table" destination="Zdg-Gm-QMj" id="S3q-SF-vYm"/>
+                        <segue destination="GZa-PT-NvK" kind="show" identifier="detail" id="pFN-Bg-oj0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="114.94565217391305"/>
+        </scene>
+        <!--Note-->
+        <scene sceneID="ziU-qV-yoJ">
+            <objects>
+                <viewController title="Note" id="GZa-PT-NvK" customClass="DetailViewController" customModule="Plain_Ol__Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mjC-fP-30p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SUd-LZ-Ltq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CC5-9G-FVw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SUd-LZ-Ltq" firstAttribute="bottom" secondItem="CC5-9G-FVw" secondAttribute="bottom" id="A7L-5U-zib"/>
+                            <constraint firstItem="SUd-LZ-Ltq" firstAttribute="leading" secondItem="CC5-9G-FVw" secondAttribute="leading" id="YM3-8C-oqn"/>
+                            <constraint firstItem="SUd-LZ-Ltq" firstAttribute="trailing" secondItem="CC5-9G-FVw" secondAttribute="trailing" id="g6T-Yp-S8N"/>
+                            <constraint firstItem="SUd-LZ-Ltq" firstAttribute="top" secondItem="CC5-9G-FVw" secondAttribute="top" id="wPo-Ft-jBI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iIt-fI-jCp"/>
+                    <connections>
+                        <outlet property="textView" destination="SUd-LZ-Ltq" id="jBK-SH-AMh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rix-6g-xWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.7391304347827" y="114.94565217391305"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cD1-ps-Uc0">
@@ -69,6 +105,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
